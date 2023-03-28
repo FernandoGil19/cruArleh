@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Boton from "./componente/Boton";
+import CrudForm from "./componente/CrudForm";
+import Tabla from "./componente/Tabla";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <div>
+            <h1>Hola Mundo</h1>
+
+            <Boton noc = "ei"/>
+            <CrudForm/>
+            <Tabla/>
+
+        </div>
+    )
 }
 
 export default App;
